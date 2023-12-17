@@ -8,8 +8,11 @@ Coisas para não esquecer sobre git e github
 ## 😊 a preencher
 
 ## comandos git
-
-´´´ echo NomeDoArquivo > .gitignore ´´´
+´´´git init´´´
+cria um novo repositorio .git na pasta em que esta acessando
+´´´rm -rf .git´´´
+remove o diretorio .git da pasta em que esta acessando
+´´´echo NomeDoArquivo > .gitignore ´´´
 .gitignore serve para excluir/ignorar as pastar ou arquivos(criara um documento com a lista)
 ´´´git status´´´
 mostra quais pastas/arquivos não foram sicronizados com o git
