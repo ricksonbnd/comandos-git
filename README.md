@@ -7,7 +7,7 @@ Coisas para não esquecer sobre git e github
 
 ## 😊 a preencher
 
-## comandos git
+# comandos git
 `git init`
 cria um novo repositorio .git na pasta em que esta acessando
 
@@ -32,6 +32,12 @@ remove o arquivo do branch
 
 `git restore --staged <file>`
 remove o arquivo do branch
+
+`git remote add origin <httpdorepositorioremoto>`
+Faz uma ligação entre o git local com o git remoto
+
+`git push -u origin main`
+Envia as modificações do repositorio local para repositorio remoto.
 
 ### git commits comandos
 
