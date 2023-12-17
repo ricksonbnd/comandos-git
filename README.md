@@ -39,7 +39,10 @@ remove o arquivo do branch
 Faz uma ligação entre o git local com o git remoto
 
 `git push -u origin main`
-Envia as modificações do repositorio local para repositorio remoto.
+Envia as modificações do repositorio local para repositorio remoto. Apos fazer sicronização pode usar apenas o comando `git push`
+
+`git pull`
+Recebe as atualizações feita no github remoto para o git local.
 
 ### GIT COMMITS COMANDOS
 
