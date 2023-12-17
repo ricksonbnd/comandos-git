@@ -5,6 +5,8 @@ Coisas para não esquecer sobre git e github
 
 1 - procurar na documentação para criar acesso por ssh
 
+2 - com github aberto, apertando a tecla "." abre o editor do github no navegador
+
 ## 😊 a preencher
 
 # comandos git
@@ -39,7 +41,7 @@ Faz uma ligação entre o git local com o git remoto
 `git push -u origin main`
 Envia as modificações do repositorio local para repositorio remoto.
 
-### git commits comandos
+### GIT COMMITS COMANDOS
 
 `git commit -m"MENSAGEM QUE DESCREVE A ALTERAÇÂO"`
 adiciona um uma mensagem a alteração
@@ -58,7 +60,7 @@ Desfaz a criação dos commits posteriores a esse ponto, mas não os exclui, nã
 `git reset --hard CommittName`
 Desfaz a criação dos commits posteriores a esse ponto, e não os exclui
 
-## comandos diretorio
+## COMANDOS DE DIRETORIO
 
 `mkdir NomeDoArquivo` 
 cria uma nova pasta no diretorio
@@ -68,6 +70,6 @@ adiciona um arquivo ou mais arquivos. Ex: $ touch resumos/aula-01.md resumos/aul
 
 
 ## ERROS
-# GIT
+### GIT
 erro ao usar `git log` onde aparece 'END' ao final, aperte 'q'
 
