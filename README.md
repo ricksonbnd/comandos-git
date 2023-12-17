@@ -18,9 +18,12 @@ remove o diretorio .git da pasta em que esta acessando
 mostra quais pastas/arquivos não foram sicronizados com o git
 ´´´touch NomeDoDiretorio/.gitkeep´´´
 cria um arquivo .gitkeep que serve para o git status reconhecer uma pasta vazia(que agora n esta vazia)
-´´´git add .NomeDoArquivo´´´
-sicroniza o arquivo ao git, se usar (git add .) sicroniza todos arquivos
-
+´´´git add NomeDoArquivo´´´
+adiciona arquivos não rastreados o branch, se usar (git add .) adiciona todos arquivos nao rastreados
+´´´git reset NomeDoArquivo´´´
+remove o arquivo do branch
+´´´git restore --staged <file>´´´
+remove o arquivo do branch
 ### git commits comandos
 ´´´git commit -m"MENSAGEM QUE DESCREVE A ALTERAÇÂO"´´´
 adiciona um uma mensagem a alteração
@@ -37,6 +40,8 @@ Desfaz a criação dos commits posteriores a esse ponto, e não os exclui
 ## comandos diretorio
 ´´´mkdir NomeDoArquivo´´´ 
 cria uma nova pasta no diretorio
+´´´touch NomeDoDiretorio/arquivo´´´
+adiciona um arquivo ou mais arquivos. Ex: $ touch resumos/aula-01.md resumos/aula-02.md (cria dois arquivos dentro da pasta resumos)
 
 
 ## ERROS
