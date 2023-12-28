@@ -7,9 +7,23 @@ Coisas para não esquecer sobre git e github
 
 2 - com github aberto, apertando a tecla "." abre o editor do github no navegador
 
-## 😊 a preencher
+3 - diretorio `origin/branch` é um diretorio remoto
 
-# comandos git
+# INICIANDO O GIT
+`$ git config --list`
+Lista as configurações do git
+
+`$ git config --global user.name "Nome Sobrenome"`
+`$ git config --global user.email seuemail@email.com` 
+configura o nome e email do usuario git, serve para ser registrado nos commits
+
+`$ git config --global init.defaultBranch main` 
+Define o nome da branch padrão para main
+
+
+
+## COMANDOS GIT
+
 `git init`
 cria um novo repositorio .git na pasta em que esta acessando
 
@@ -18,9 +32,6 @@ remove o diretorio .git da pasta em que esta acessando
 
 `git status`
 mostra quais pastas/arquivos não foram sicronizados com o git
-
-`touch NomeDoDiretorio/.gitkeep`
-cria um arquivo .gitkeep que serve para o git status reconhecer uma pasta vazia(que agora n esta vazia)
 
 `git add NomeDoArquivo`
 adiciona arquivos não rastreados o branch, se usar `git add .` adiciona todos arquivos nao rastreados
@@ -34,15 +45,29 @@ remove o arquivo do branch
 `git remote add origin <httpdorepositorioremoto>`
 Faz uma ligação entre o git local com o git remoto
 
+### GIT REPOSITORIOS
+
 `git push -u origin nomeDoBranch`
 Envia para o diretorio remoto (git hub) a ultima versão do branch escolido. Ex: `git push origin main` envia a ultima atualização do branch main. Esse comando também cria o branch no diretorio remoto caso ainda não exista. Apos isso pode-se usar apenas `git push`
 
 `git pull`
 Recebe as atualizações feita no github remoto para o git local.
 
+`git fetch origin NomeDaBranch`
+Baixa do diretorio remoto apenas as ultimas mudanças feitas, mas não aplica nos arquivos do diretorio local
+
+`git diff oldBranch nemBranch`
+Mostra as mudanças feitas entre duas branchs (maisVelha Vs maisNova)
+
+`git stash`
+Salva modificações feitas temporariamente e as remove do diretorio.
+
+`git stash apply`
+Aplica as modificações salvas.
+
 ### GIT BRANCH
 `git checkout nomeDoBranch`
-Muda o ponteiro pra o branch selecionado
+Seleciona o branch a ser trabalhado
 
 `git checkout -b nomeDoBranch`
 Cria um novo branch com o nome selecionado
@@ -59,6 +84,8 @@ Lista as branchs com os seus ultimos commits
 `git branch -d nomeDoBranch`
 Deleta a branch pedida
 
+`git clone URLdoRepositorio --branch NomeDaBranch --single-branch`
+clona uma branch especifica de um repositorio, se não for indicado nome da branch, irá clonar a main
 
 ### GIT COMMITS COMANDOS
 
@@ -87,6 +114,9 @@ Desfaz as ultimas modificações até o ultimo commit
 `mkdir NomeDoArquivo` 
 cria uma nova pasta no diretorio
 
+`touch NomeDoDiretorio/.gitkeep`
+cria um arquivo .gitkeep que serve para o git status reconhecer uma pasta vazia(que agora n esta vazia)
+
 `touch NomeDoDiretorio/arquivo`
 adiciona um arquivo ou mais arquivos. Ex: $ touch resumos/aula-01.md resumos/aula-02.md (cria dois arquivos dentro da pasta resumos)
 
@@ -95,6 +125,14 @@ O comando echo adiciona um novo arquivo ao diretorio. Por exemplo: `echo "boas f
 
 `echo NomeDoArquivo > .gitignore `
 .gitignore serve para excluir/ignorar as pastar ou arquivos(criara um arquivo de texto com com a lista de arquivos que vão ser ignorados)
+
+
+### GIT ALIASES
+`$ git config --global alias.nomeDaAbreviação NomeDoComando`
+O aliases serve para criar apelidos para certos comandos dentro do git, por exemplo para o comando status sendo abreviado para st assim: `git st` funciona como `git status` através do comando: `$ git config --global alias.st status` 
+
+`$ git config --global --unset alias.nomeDaAbreviação` 
+Remove o apelido criado.
 
 ## ERROS
 ### GIT
