@@ -16,12 +16,6 @@ cria um novo repositorio .git na pasta em que esta acessando
 `rm -rf .git`
 remove o diretorio .git da pasta em que esta acessando
 
-`echo "textoDentroDoArquivo" > NomeDoArquivo.Extenção`
-O comando echo adiciona um novo arquivo ao diretorio. Por exemplo: `echo "boas festas" > mensagem_finalDeAno.txt` cria um arquivo com nome messagem_finalDeAno.txt com a escrita 'boas festas' dentro.
-
-`echo NomeDoArquivo > .gitignore `
-.gitignore serve para excluir/ignorar as pastar ou arquivos(criara um arquivo de texto com com a lista de arquivos que vão ser ignorados)
-
 `git status`
 mostra quais pastas/arquivos não foram sicronizados com o git
 
@@ -45,6 +39,24 @@ Envia as modificações do repositorio local para repositorio remoto. Apos fazer
 
 `git pull`
 Recebe as atualizações feita no github remoto para o git local.
+
+### GIT BRANCH
+
+`git checkout -b nomeDoBranch`
+Cria um novo branch
+
+`git merge nomeDoBranch`
+Faz o Merge da brench com a main
+
+`git branch`
+Lista as branchs do repositorio. O asterisco aponta em qual branch estamos trabalhando
+
+`git branch -v` 
+Lista as branchs com os seus ultimos commits
+
+`git branch -d nomeDoBranch`
+Deleta a branch pedida
+
 
 ### GIT COMMITS COMANDOS
 
@@ -73,6 +85,11 @@ cria uma nova pasta no diretorio
 `touch NomeDoDiretorio/arquivo`
 adiciona um arquivo ou mais arquivos. Ex: $ touch resumos/aula-01.md resumos/aula-02.md (cria dois arquivos dentro da pasta resumos)
 
+`echo "textoDentroDoArquivo" > NomeDoArquivo.Extenção`
+O comando echo adiciona um novo arquivo ao diretorio. Por exemplo: `echo "boas festas" > mensagem_finalDeAno.txt` cria um arquivo com nome messagem_finalDeAno.txt com a escrita 'boas festas' dentro.
+
+`echo NomeDoArquivo > .gitignore `
+.gitignore serve para excluir/ignorar as pastar ou arquivos(criara um arquivo de texto com com a lista de arquivos que vão ser ignorados)
 
 ## ERROS
 ### GIT
