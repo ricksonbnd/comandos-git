@@ -35,18 +35,20 @@ remove o arquivo do branch
 Faz uma ligação entre o git local com o git remoto
 
 `git push -u origin nomeDoBranch`
-Envia para o diretorio remoto (git hub) a ultima versão do branch escolido. Ex: `git push origin main` envia a ultima atualização do branch main. Esse comando também cria o branch no diretorio remoto caso ainda não exista. Apos isso pode-se usar apenas (eu acho, precisa de mais testes) `git push`
+Envia para o diretorio remoto (git hub) a ultima versão do branch escolido. Ex: `git push origin main` envia a ultima atualização do branch main. Esse comando também cria o branch no diretorio remoto caso ainda não exista. Apos isso pode-se usar apenas `git push`
 
 `git pull`
 Recebe as atualizações feita no github remoto para o git local.
 
 ### GIT BRANCH
+`git checkout nomeDoBranch`
+Muda o ponteiro pra o branch selecionado
 
 `git checkout -b nomeDoBranch`
-Cria um novo branch
+Cria um novo branch com o nome selecionado
 
 `git merge nomeDoBranch`
-Faz o Merge da brench com a main
+Faz o Merge do branch atual com o branch selecionado.
 
 `git branch`
 Lista as branchs do repositorio. O asterisco aponta em qual branch estamos trabalhando
