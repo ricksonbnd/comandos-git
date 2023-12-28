@@ -16,9 +16,11 @@ cria um novo repositorio .git na pasta em que esta acessando
 `rm -rf .git`
 remove o diretorio .git da pasta em que esta acessando
 
+`echo "textoDentroDoArquivo" > NomeDoArquivo.Extenção`
+O comando echo adiciona um novo arquivo ao diretorio. Por exemplo: `echo "boas festas" > mensagem_finalDeAno.txt` cria um arquivo com nome messagem_finalDeAno.txt com a escrita 'boas festas' dentro.
+
 `echo NomeDoArquivo > .gitignore `
-.gitignore serve para excluir/ignorar as pastar ou arquivos(criara um documento com a 
-lista)
+.gitignore serve para excluir/ignorar as pastar ou arquivos(criara um arquivo de texto com com a lista de arquivos que vão ser ignorados)
 
 `git status`
 mostra quais pastas/arquivos não foram sicronizados com o git
