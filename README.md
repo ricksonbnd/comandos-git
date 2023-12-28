@@ -34,8 +34,8 @@ remove o arquivo do branch
 `git remote add origin <httpdorepositorioremoto>`
 Faz uma ligação entre o git local com o git remoto
 
-`git push -u origin main`
-Envia as modificações do repositorio local para repositorio remoto. Apos fazer sicronização pode usar apenas o comando `git push`
+`git push -u origin nomeDoBranch`
+Envia para o diretorio remoto (git hub) a ultima versão do branch escolido. Ex: `git push origin main` envia a ultima atualização do branch main. Esse comando também cria o branch no diretorio remoto caso ainda não exista. Apos isso pode-se usar apenas (eu acho, precisa de mais testes) `git push`
 
 `git pull`
 Recebe as atualizações feita no github remoto para o git local.
