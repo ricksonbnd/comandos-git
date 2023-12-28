@@ -10,17 +10,18 @@ Coisas para não esquecer sobre git e github
 3 - diretorio `origin/branch` é um diretorio remoto
 
 # INICIANDO O GIT
-`$ git config --list`
+`git config --list`
 Lista as configurações do git
 
-`$ git config --global user.name "Nome Sobrenome"`
-`$ git config --global user.email seuemail@email.com` 
+`git config --global user.name "Nome Sobrenome"`
+`git config --global user.email seuemail@email.com` 
 configura o nome e email do usuario git, serve para ser registrado nos commits
 
-`$ git config --global init.defaultBranch main` 
+`git config --global init.defaultBranch main` 
 Define o nome da branch padrão para main
 
-
+`git clone URLdoDiretorio`
+Clona um diretorio do git hub, fazendo assim o link entre diretorio remoto e local.
 
 ## COMANDOS GIT
 
@@ -71,6 +72,9 @@ Seleciona o branch a ser trabalhado
 
 `git checkout -b nomeDoBranch`
 Cria um novo branch com o nome selecionado
+
+`git checkout -f nomeDoBranch`
+Força a troca de branch, o git desconsidera as entradas feitas que o merge não foi realizado
 
 `git merge nomeDoBranch`
 Faz o Merge do branch atual com o branch selecionado.
