@@ -77,6 +77,9 @@ Desfaz a criação dos commits posteriores a esse ponto, mas não os exclui, nã
 `git reset --hard CommittName`
 Desfaz a criação dos commits posteriores a esse ponto, e não os exclui
 
+`git restore`
+Desfaz as ultimas modificações até o ultimo commit
+
 ## COMANDOS DE DIRETORIO
 
 `mkdir NomeDoArquivo` 
