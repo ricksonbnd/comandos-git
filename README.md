@@ -9,6 +9,8 @@ Coisas para não esquecer sobre git e github
 
 3 - diretorio `origin/branch` é um diretorio remoto
 
+4 - upstream são repositorios de outros usuarios
+
 # INICIANDO O GIT
 `git config --list`
 Lista as configurações do git
@@ -22,6 +24,12 @@ Define o nome da branch padrão para main
 
 `git clone URLdoDiretorio`
 Clona um diretorio do git hub, fazendo assim o link entre diretorio remoto e local.
+
+`git remote add origin <httpdorepositorioremoto>`
+Faz uma ligação entre o git local com o git remoto
+
+`git remote add upstream URLdoRepositorio`
+Faz uma ligação upstream com o repositorio local, serve para manter um repositorio local sincronizado com repositorio de outro usuario.
 
 ## COMANDOS GIT
 
@@ -43,9 +51,6 @@ remove o arquivo do branch
 `git restore --staged <file>`
 remove o arquivo do branch
 
-`git remote add origin <httpdorepositorioremoto>`
-Faz uma ligação entre o git local com o git remoto
-
 ### GIT REPOSITORIOS
 
 `git push -u origin nomeDoBranch`
@@ -53,6 +58,9 @@ Envia para o diretorio remoto (git hub) a ultima versão do branch escolido. Ex:
 
 `git pull`
 Recebe as atualizações feita no github remoto para o git local.
+
+`git pull upstream branchName`
+Recebe as atualizações feitas no github upstream na branch selecionada
 
 `git fetch origin NomeDaBranch`
 Baixa do diretorio remoto apenas as ultimas mudanças feitas, mas não aplica nos arquivos do diretorio local
