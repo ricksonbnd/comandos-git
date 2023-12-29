@@ -122,6 +122,8 @@ Desfaz a criação dos commits posteriores a esse ponto, e não os exclui
 Desfaz as ultimas modificações até o ultimo commit
 
 ## COMANDOS DE DIRETORIO
+`cd nomeDoDiretorio`
+Acessa uma pasta a pasta com o nome do diretorio selecionado.
 
 `mkdir NomeDoArquivo` 
 cria uma nova pasta no diretorio
